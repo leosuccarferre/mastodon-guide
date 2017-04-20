@@ -172,8 +172,10 @@ Once done, press ^X, type `Y` and hit Enter to save your changes.
 
 On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your list of repositories all you'll need to do is apt-get the following packages:
 
-`sudo add-apt-repository ppa:certbot/certbot`
-`sudo apt-get update`
+```
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+```
 
 Now we can install Certbot:
 
