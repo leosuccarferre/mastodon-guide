@@ -22,8 +22,6 @@ Switch to the new user:
 
 `su - mastodon`
 
-***If you'd like to setup public key authentication, now is the time to do so... it's recommended and Google is your friend for finding an easy guide. Alternatively, you can go right ahead with simple username/password authentication if that's your bag.***
-
 ## Install Docker
 
 First, update the package database:
