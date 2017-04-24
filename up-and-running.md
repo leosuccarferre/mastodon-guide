@@ -306,21 +306,8 @@ sudo systemctl restart nginx.service
 
 ### Email confirmation isn't working
 
-#### Is your host blacklisted?
-
-Some mail hosts will blacklist or bounce emails coming from newly created email addresses or domains. Thankfully Mailgun will try sending these messages again and it should eventually get through.
+Some mail hosts will blacklist or bounce emails coming from newly created email addresses or domains. Thankfully Mailgun will try sending these messages again and it should eventually get through. 
 
 If you are not receiving emails and need to confirm a user account, go to the "Logs" tab inside the Mailgun UI and click your domain. You should see a green row with the verification email that it attempted to send. Click the cog icon to the left of the row and then "View Message", from here you can manually copy/paste the confirmation URL into your browser to get around this problem.
 
 After your instance is live for ~24 hours, you shouldn't be having this issue any longer. 
-
-#### Is your SMTP sending port blocked?
-
-Some ISPs and hosts such as Scaleway block email sending on the standard SMTP port, `25`. To see if that's happening view the web container's logs using `docker logs mastodon_web_1` and look for connection timeouts. To correct this edit the `.env.production` configuration file and change `SMTP_PORT: 25` to port `2525`, which Mailgun and SparkPost support.
-
-After doing so you'll need to rebuild the containers:
-```
-docker-compose down
-docker-compose build
-docker-compose up -d
-```
