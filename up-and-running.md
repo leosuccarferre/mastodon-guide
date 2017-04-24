@@ -316,7 +316,7 @@ Some ISPs and hosts such as Scaleway block email sending on the standard SMTP po
 
 After doing so you'll need to rebuild the containers:
 ```
-docker-compose down
+docker-compose stop
 docker-compose build
 docker-compose up -d
 ```
