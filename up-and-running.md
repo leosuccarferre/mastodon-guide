@@ -28,6 +28,10 @@ First, update the package database:
 
 `sudo apt-get update`
 
+Then install APT repository management tools and support for `https` repositories:
+
+`sudo apt-get install apt-transport-https software-properties-common`
+
 Now let's install Docker. Add the GPG key for the official Docker repository to the system:
 
 `sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D`
