@@ -172,17 +172,24 @@ Find all intances of `example.com` and replace with the domain name you have poi
 
 Once done, press ^X, type `Y` and hit Enter to save your changes.
 
-## Setup SSL/HTTPS with Let's Encrypt
+## Setup SSL/HTTPS with Certbot
 
-First, stop the nginx service:
+On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your list of repositories all you'll need to do is apt-get the following packages:
+
+```
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+```
+
+Now we can install Certbot:
+
+`sudo apt-get install certbot`
+
+Once installed, we can generate the SSL certificates. First you'll need to stop your nginx server so that Certbot can run its standalone authenticator:
 
 `sudo systemctl stop nginx.service`
 
-Now we can install Let's Encrypt:
-
-`sudo apt-get install letsencrypt`
-
-Once installed, we can generate the SSL certificates. Run the following command replacing `example.com` with the domain you have pointed at your machine:
+Then simply run the following command replacing `example.com` with the domain you have pointed at your machine:
 
 `sudo letsencrypt certonly --standalone -d example.com`
 
