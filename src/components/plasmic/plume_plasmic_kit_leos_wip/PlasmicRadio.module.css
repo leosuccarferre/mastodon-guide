@@ -1,0 +1,107 @@
+.root {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  position: relative;
+  flex-direction: row;
+  border-radius: 4px;
+  padding: 8px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8px;
+}
+.root__isSelected {
+  background-color: rgb(240, 242, 245) /* plasmic-token: L89ExH6ks */;
+}
+.root____focusVisibleWithin {
+  box-shadow: inset 0px 0px 0px 2px rgb(4, 164, 244)
+    /* plasmic-token: eI5XVwQOs8t */;
+  outline: none;
+}
+.root:focus-within {
+  box-shadow: inset 0px 0px 0px 2px rgb(4, 164, 244)
+    /* plasmic-token: eI5XVwQOs8t */;
+  outline: none;
+}
+.root:hover {
+  box-shadow: none;
+  background-color: rgb(240, 242, 245) /* plasmic-token: J4mdJYsm3rg */;
+}
+.root:active {
+  background-color: rgb(228, 230, 235) /* plasmic-token: 3dsm_UqzX */;
+}
+.buttonContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.root .buttonContainer____focusVisibleWithin {
+  outline: none;
+}
+.box {
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  box-shadow: inset 0px 0px 0px 2px rgb(74, 76, 79)
+    /* plasmic-token: QQdIvJFj1 */;
+  flex-shrink: 0;
+  border-radius: 999px;
+}
+.box__isSelected {
+  background-color: rgb(4, 164, 244) /* plasmic-token: eI5XVwQOs8t */;
+  box-shadow: none;
+}
+.box__isDisabled {
+  box-shadow: inset 0px 0px 0px 2px rgb(150, 153, 158)
+    /* plasmic-token: jBhCqxBbh1U */;
+}
+.root:focus-within .box {
+  outline: none;
+}
+.root .box____focusVisibleWithin {
+  outline: none;
+}
+.svg {
+  position: absolute;
+  object-fit: cover;
+  width: 12px;
+  height: 12px;
+  color: rgb(255, 255, 255);
+  left: 2px;
+  top: 2px;
+}
+.labelContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.root .labelContainer____focusVisibleWithin {
+  outline: none;
+}
+.slotChildren {
+  user-select: none;
+}
+.slotChildren__isDisabled {
+  color: rgb(150, 153, 158) /* plasmic-token: jBhCqxBbh1U */;
+}
+.slotChildren__hasLabel {
+  font-family: Inter;
+  font-size: 11px;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  line-height: 1.5;
+}
+.root .slotChildren____focusVisibleWithin > * {
+  outline: none;
+}

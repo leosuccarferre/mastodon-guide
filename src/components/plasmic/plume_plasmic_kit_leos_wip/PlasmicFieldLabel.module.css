@@ -1,0 +1,35 @@
+.root {
+  display: flex;
+  position: relative;
+  width: 52px;
+  padding: 8px 4px 8px 8px;
+}
+.root > :global(.__wab_flex-container) {
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8px;
+}
+.startIconContainer {
+  display: flex;
+  position: relative;
+  left: auto;
+  top: auto;
+}
+.slotStartIcon {
+  color: rgb(74, 76, 79) /* plasmic-token: QQdIvJFj1 */;
+}
+.start {
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.slotChildren {
+  font-family: Inter;
+  font-size: 11px;
+  color: rgb(122, 125, 130) /* plasmic-token: yyaHFSf_c */;
+  line-height: 1.5;
+}

@@ -1,0 +1,55 @@
+.root {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.root__isDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.root____focusVisibleWithin {
+  outline: none;
+}
+.tooltipContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: -24px;
+}
+.thumb {
+  display: block;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 24px;
+  height: 24px;
+  left: auto;
+  top: auto;
+  z-index: 1;
+  box-shadow: none;
+  flex-shrink: 0;
+  border: 2px dashed rgb(0, 228, 91);
+}
+.thumb__isDragging {
+  background-color: rgb(0, 228, 91);
+  border-color: rgb(0, 228, 91);
+}
+.root:focus-within .thumb {
+  outline: none;
+  border-color: rgb(33, 0, 228);
+}
+.root .thumb____focusVisibleWithin {
+  outline: none;
+  border-color: rgb(33, 0, 228);
+}
+.labelContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}

@@ -1,0 +1,17 @@
+{
+  "projects": [
+    {
+      "projectId": "seaQhLVS4bbjiGvJJrRwyL",
+      "version": "12.0.1",
+      "dependencies": {}
+    },
+    {
+      "projectId": "4k5VUvYN9ByL8a1GrrWDBZ",
+      "version": "latest",
+      "dependencies": {
+        "seaQhLVS4bbjiGvJJrRwyL": "12.0.1"
+      }
+    }
+  ],
+  "cliVersion": "0.1.97"
+}

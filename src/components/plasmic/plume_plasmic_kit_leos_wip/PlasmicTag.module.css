@@ -1,0 +1,37 @@
+.root {
+  display: flex;
+  position: relative;
+  background-color: rgb(227, 249, 246) /* plasmic-token: wUUFmxQnNSa */;
+  flex-direction: row;
+  box-shadow: inset 0px 0px 0px 1px rgb(208, 247, 242)
+    /* plasmic-token: m6gRzgjRheQ */;
+  cursor: grab;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8px;
+}
+.root:active {
+  background-color: rgb(208, 247, 242) /* plasmic-token: m6gRzgjRheQ */;
+}
+.box {
+  font-family: Inter;
+  font-size: 11px;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  line-height: 1.5;
+  position: relative;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  color: rgb(150, 153, 158) /* plasmic-token: S2OvgLalS */;
+  width: 1em;
+  height: 1em;
+}

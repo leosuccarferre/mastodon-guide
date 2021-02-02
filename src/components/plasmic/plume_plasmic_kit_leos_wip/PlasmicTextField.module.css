@@ -1,0 +1,131 @@
+.root {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 32px;
+  min-width: 0;
+}
+.root____focusVisibleWithin {
+  outline: none;
+}
+.root:focus-within {
+  outline: none;
+}
+.labelContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-bottom: 4px;
+}
+.box {
+  display: flex;
+  position: relative;
+}
+.slotLabel {
+  color: rgb(122, 125, 130) /* plasmic-token: yyaHFSf_c */;
+}
+.textboxContainer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  min-height: 32px;
+  min-width: 0;
+  border-radius: 4px;
+}
+.textboxContainer__isDisabled {
+  cursor: not-allowed;
+}
+.root .textboxContainer____focusVisibleWithin {
+  outline: none;
+  border-color: rgb(33, 0, 228);
+}
+.root:focus-within .textboxContainer {
+  background-color: rgb(255, 255, 255) /* plasmic-token: maWCPk1v_oCK */;
+  outline: none;
+}
+.startIconContainer {
+  display: flex;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+.slotStartIcon {
+  color: rgb(74, 76, 79) /* plasmic-token: QQdIvJFj1 */;
+}
+.slotStartIcon__isDisabled {
+  color: rgb(201, 204, 209) /* plasmic-token: 5Zjzi6myY */;
+}
+.start {
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.textbox {
+  font-family: IBM Plex Mono;
+  font-size: 11px;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  line-height: 1.5;
+  position: relative;
+  background-color: rgb(255, 255, 255) /* plasmic-token: v6LfSbn-y */;
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  border-radius: 4px;
+  padding: 8px;
+  border-style: none;
+}
+.textbox__withIcons_start {
+  padding-left: 32px;
+}
+.textbox__withIcons_end {
+  padding-right: 26px;
+}
+.textbox__isDisabled {
+  color: rgb(150, 153, 158) /* plasmic-token: eoKrlLGaw */;
+}
+.root:hover .textbox {
+  box-shadow: inset 0px 0px 0px 1px rgb(228, 230, 235)
+    /* plasmic-token: 4QM1pZKqI */;
+}
+.root .textbox____focusVisibleWithin {
+  box-shadow: inset 0px 0px 0px 2px rgb(4, 164, 244)
+    /* plasmic-token: eI5XVwQOs8t */;
+  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  outline: none;
+}
+.root:focus-within .textbox {
+  box-shadow: inset 0px 0px 0px 2px rgb(4, 164, 244)
+    /* plasmic-token: eI5XVwQOs8t */;
+  color: rgb(5, 5, 5) /* plasmic-token: NEon4Y--Z */;
+  outline: none;
+}
+.root .textbox::placeholder {
+  font-family: "Inter";
+  color: rgb(122, 125, 130) /* plasmic-token: yyaHFSf_c */;
+}
+.root:focus-within .textbox::placeholder {
+  outline: none;
+}
+.endIconContainer {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.slotEndIcon {
+  color: rgb(150, 153, 158) /* plasmic-token: S2OvgLalS */;
+}
+.slotEndIcon__isDisabled {
+  color: rgb(201, 204, 209) /* plasmic-token: 5Zjzi6myY */;
+}
+.end {
+  object-fit: cover;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,119 @@
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  cursor: pointer;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8px;
+}
+.root__isDisabled {
+  cursor: not-allowed;
+}
+._switch {
+  display: flex;
+  width: 40px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.root ._switch____focusVisibleWithin {
+  outline: none;
+}
+.track {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  box-shadow: inset 0px 0px 0px 1px rgb(228, 230, 235)
+    /* plasmic-token: mfYPuA8TIiO */;
+  border-radius: 12px;
+}
+.track__isSelected {
+  background-color: rgb(240, 242, 245) /* plasmic-token: L89ExH6ks */;
+  box-shadow: none;
+}
+.root:focus-within .track {
+  box-shadow: inset 0px 0px 0px 2px rgb(4, 164, 244)
+    /* plasmic-token: eI5XVwQOs8t */;
+  outline: none;
+}
+.root .track____focusVisibleWithin {
+  box-shadow: inset 0px 0px 0px 2px rgb(4, 164, 244)
+    /* plasmic-token: eI5XVwQOs8t */;
+  outline: none;
+}
+.root:hover .track {
+  background-color: rgb(240, 242, 245) /* plasmic-token: L89ExH6ks */;
+}
+.root__isDisabled:hover .track__isDisabled {
+  background-color: rgba(255, 255, 255, 0) /* plasmic-token: kfauf58rd4Jw */;
+}
+.root__isDisabled_isSelected:hover .track__isDisabled_isSelected {
+  background-color: rgb(240, 242, 245) /* plasmic-token: L89ExH6ks */;
+}
+.thumb {
+  display: block;
+  position: absolute;
+  background-color: rgb(150, 153, 158) /* plasmic-token: jBhCqxBbh1U */;
+  width: 12px;
+  height: 12px;
+  box-shadow: none;
+  left: 6px;
+  bottom: auto;
+  top: 6px;
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+.thumb__isSelected {
+  background-color: rgb(74, 76, 79) /* plasmic-token: 2eUJTxCVL-C */;
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 20px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.thumb__isDisabled {
+  background-color: rgb(201, 204, 209) /* plasmic-token: 5Zjzi6myY */;
+}
+.root:focus-within .thumb {
+  outline: none;
+  border-color: rgb(33, 0, 228);
+}
+.root:hover .thumb {
+  border-color: rgb(96, 255, 87);
+}
+.root .thumb____focusVisibleWithin {
+  outline: none;
+}
+.labelContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.slotChildren {
+  user-select: none;
+}
+.slotChildren__hasLabel {
+  font-family: Inter;
+  font-size: 11px;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  line-height: 1.5;
+}
+.slotChildren__isDisabled {
+  color: rgb(150, 153, 158) /* plasmic-token: eoKrlLGaw */;
+}

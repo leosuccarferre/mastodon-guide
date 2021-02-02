@@ -1,0 +1,31 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 8px 8px 4px;
+}
+.box {
+  display: flex;
+  position: relative;
+  padding: 8px;
+}
+.slotChildren {
+  font-family: Inter;
+  font-size: 11px;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.button:global(.__wab_instance) {
+  position: relative;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}

@@ -1,0 +1,62 @@
+.root {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  position: relative;
+  flex-direction: column;
+}
+.labelContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.labelContainer__hasLabel {
+  margin-bottom: 4px;
+}
+.slotLabel__hasLabel {
+  color: rgb(122, 125, 130) /* plasmic-token: yyaHFSf_c */;
+}
+.trigger:global(.__wab_instance) {
+  position: relative;
+}
+.overlay {
+  display: flex;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  left: auto;
+  top: auto;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.15)
+    /* plasmic-token: OOswLOta7uV3 */;
+  min-width: 0;
+  border-radius: 4px;
+}
+.optionsContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  min-width: 0;
+}
+.selectOption__cx1BZ:global(.__wab_instance) {
+  position: relative;
+}
+.selectOption__q2MTe:global(.__wab_instance) {
+  position: relative;
+}
+.selectOption__kvLfV:global(.__wab_instance) {
+  position: relative;
+}
+.selectOption___9ZPPi:global(.__wab_instance) {
+  position: relative;
+}

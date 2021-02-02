@@ -1,0 +1,57 @@
+.root {
+  display: flex;
+  width: 100%;
+  position: relative;
+  flex-direction: row;
+  min-width: 0;
+  padding: 8px;
+}
+.root__isDisabled {
+  cursor: not-allowed;
+}
+.root__isSelected {
+  background-color: rgb(224, 247, 255) /* plasmic-token: ro4OjMDnNRi */;
+}
+.root:focus {
+  box-shadow: inset 0px 0px 0px 2px rgb(4, 164, 244)
+    /* plasmic-token: eI5XVwQOs8t */;
+  outline: none;
+  padding: 8px;
+}
+.root:hover {
+  box-shadow: inset 0px 0px 0px 1px rgb(4, 164, 244)
+    /* plasmic-token: eI5XVwQOs8t */;
+}
+.root:active {
+  background-color: rgb(224, 247, 255) /* plasmic-token: ro4OjMDnNRi */;
+}
+.root__isDisabled:hover {
+  box-shadow: none;
+}
+.optionContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 0;
+}
+.root:focus .optionContainer {
+  outline: none;
+}
+.slotChildren {
+  font-family: Inter;
+  font-size: 11px;
+  color: rgb(50, 52, 54) /* plasmic-token: 6-9k9VEZ- */;
+  line-height: 1.5;
+}
+.slotChildren__isDisabled {
+  color: rgb(150, 153, 158) /* plasmic-token: eoKrlLGaw */;
+}
+.slotChildren__isSelected {
+  font-weight: 600;
+}
+.root:focus .slotChildren > * {
+  outline: none;
+}
