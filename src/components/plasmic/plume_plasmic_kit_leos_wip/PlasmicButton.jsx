@@ -217,6 +217,9 @@ function PlasmicButton__RenderFunc(props) {
               "secondary"
             ),
 
+            [sty.slotChildren__type_secondary___focusVisible]:
+              hasVariant(variants, "type", "secondary") &&
+              triggers.focusVisible_root,
             [sty.slotChildren__withIcons_end]: hasVariant(
               variants,
               "withIcons",

@@ -18,7 +18,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: 0PjHSFlclC74/component
-import { ScreenContext } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: mzc1S_Z5rQgP0/globalVariant
+import { useScreenVariants } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: mzc1S_Z5rQgP0/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
 import projectcss from "./plasmic_plume_plasmic_kit_leos_wip.module.css"; // plasmic-import: 4k5VUvYN9ByL8a1GrrWDBZ/projectcss
@@ -31,7 +31,7 @@ export const PlasmicTesting2__ArgProps = new Array("newnew");
 function PlasmicTesting2__RenderFunc(props) {
   const { variants, args, overrides, forNode } = props;
   const globalVariants = ensureGlobalVariants({
-    screen: React.useContext(ScreenContext)
+    screen: useScreenVariants()
   });
 
   return (

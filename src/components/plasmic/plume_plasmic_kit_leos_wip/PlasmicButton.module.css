@@ -67,6 +67,8 @@
   box-shadow: none;
 }
 .root__type_rounded {
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 16px;
 }
 .root:hover {
@@ -116,6 +118,10 @@
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  right: auto;
 }
 .root .startIconContainer____focusVisible {
   outline: none;
@@ -161,12 +167,19 @@
 .root:focus .slotChildren > * {
   outline: none;
 }
+.root__type_secondary .slotChildren__type_secondary___focusVisible > * {
+  outline: none;
+}
 .endIconContainer {
   display: flex;
   position: relative;
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  right: auto;
 }
 .slotEndIcon {
   color: rgb(74, 76, 79) /* plasmic-token: QQdIvJFj1 */;

@@ -33,7 +33,7 @@
     {
       "projectId": "4k5VUvYN9ByL8a1GrrWDBZ",
       "projectName": "[Plume] PlasmicKit (Leo's WIP)",
-      "version": "latest",
+      "version": "4.0.0",
       "cssFilePath": "plasmic/plume_plasmic_kit_leos_wip/plasmic_plume_plasmic_kit_leos_wip.module.css",
       "components": [
         {
@@ -502,6 +502,6 @@
       }
     ]
   },
-  "cliVersion": "0.1.97",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.97/dist/plasmic.schema.json"
+  "cliVersion": "0.1.104",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.104/dist/plasmic.schema.json"
 }

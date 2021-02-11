@@ -3,44 +3,27 @@
 /* tslint:disable */
 /* prettier-ignore-start */
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 
 export const ScreenContext = React.createContext(
   "PLEASE_RENDER_INSIDE_PROVIDER"
 );
-
-const screenVariants = ["unnamedVariant"];
-
-const screenQueries = ["(min-width:0px) and (max-width:800px)"];
-
-function matchScreenVariant() {
-  if (!globalThis.matchMedia) {
-    return undefined;
-  }
-  const index = screenQueries.findIndex(
-    (q) => globalThis.matchMedia(q).matches
-  );
-  return index >= 0 ? screenVariants[index] : undefined;
-}
+/**
+ *  @deprecated Plasmic now uses a custom hook for Screen variants, which is
+ *  automatically included in your components. Please remove this provider
+ *  from your code.
+ */
 
 export function ScreenVariantProvider(props) {
-  const [value, setValue] = React.useState();
-  React.useEffect(() => {
-    const handler = () => {
-      const newValue = matchScreenVariant();
-      if (newValue !== value) {
-        setValue(newValue);
-      }
-    };
-    handler();
-    window.addEventListener("resize", handler);
-    return () => window.removeEventListener("resize", handler);
-  }, [value]);
-  return (
-    <ScreenContext.Provider value={value}>
-      {props.children}
-    </ScreenContext.Provider>
+  console.warn(
+    "DEPRECATED: Plasmic now uses a custom hook for Screen variants, which is automatically included in your components. Please remove this provider from your code."
   );
+  return props.children;
 }
+
+export const useScreenVariants = p.createUseScreenVariants(false, {
+  unnamedVariant: "(min-width:0px) and (max-width:800px)",
+});
 
 export default ScreenContext;
 /* prettier-ignore-end */
